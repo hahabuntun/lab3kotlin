@@ -1,4 +1,4 @@
-internal open class SmartDevice4(val name: String, val category: String) {
+open class SmartDevice4(val name: String, val category: String) {
     //private var deviceStatus = "online"
     var deviceStatus = "online"
         protected set
@@ -28,13 +28,14 @@ class SmartTvDevice2(deviceName: String, deviceCategory: String) :
     SmartDevice4(name = deviceName, category = deviceCategory) {
     override val deviceType = "Smart TV"
 
-    var speakerVolume = 2
+    private var speakerVolume = 2
         set(value) {
             if (value in 0..100) {
                 field = value
             }
         }
-    var channelNumber = 1
+
+    private var channelNumber = 1
         set(value) {
             if (value in 0..200) {
                 field = value
@@ -44,7 +45,7 @@ class SmartTvDevice2(deviceName: String, deviceCategory: String) :
         speakerVolume++
         println("Speaker volume increased to $speakerVolume.")
     }
-    protected fun nextChannel() {
+    fun nextChannel() {
         channelNumber++
         println("Channel number increased to $channelNumber.")
     }
@@ -66,7 +67,7 @@ class SmartTvDevice2(deviceName: String, deviceCategory: String) :
 class SmartLightDevice2(deviceName: String, deviceCategory: String) :
     SmartDevice4(name = deviceName, category = deviceCategory) {
     override val deviceType = "Smart Light"
-    var brightnessLevel = 0
+    private var brightnessLevel = 0
         set(value) {
             if (value in 0..100) {
                 field = value
