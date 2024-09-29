@@ -11,4 +11,7 @@ fun main() {
 
     number = null
     println(number)
+
+    var favoriteActor3: String? = "Sandra Oh"
+    println(favoriteActor3?.length)
 }
