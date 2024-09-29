@@ -13,8 +13,10 @@ fun main() {
 
     val treatFunction = trickOrTreat(false, coins)
     val trickFunction = trickOrTreat(true, cupcake)
+    val example = trickOrTreat(true, null)
     treatFunction()
     trickFunction()
+    example()
 }
 
 //fun trick() {
