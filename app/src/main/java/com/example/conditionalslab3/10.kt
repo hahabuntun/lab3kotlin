@@ -23,7 +23,11 @@ fun main() {
       "Have a cupcake!"
     }
     val example = trickOrTreat(true, null)
-    treatFunction()
+
+    repeat(4){
+        treatFunction()
+    }
+
     trickFunction()
     example()
 }
