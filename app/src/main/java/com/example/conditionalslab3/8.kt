@@ -1,6 +1,9 @@
 open class SmartDevice4(val name: String, val category: String) {
-    private var deviceStatus = "online"
-
+    //private var deviceStatus = "online"
+    var deviceStatus = "online"
+        protected set(value) {
+            field = value
+        }
     open val deviceType = "unknown"
 
     constructor(name: String, category: String, statusCode: Int) : this(name, category) {
