@@ -1,4 +1,4 @@
-open class SmartDevice4(val name: String, val category: String) {
+internal open class SmartDevice4(val name: String, val category: String) {
     //private var deviceStatus = "online"
     var deviceStatus = "online"
         protected set
