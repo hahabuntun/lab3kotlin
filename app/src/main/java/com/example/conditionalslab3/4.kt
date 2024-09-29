@@ -36,4 +36,12 @@ fun main() {
     }
 
     println("The number of characters in your favorite actor's name is $lengthOfName.")
+
+
+
+    var favoriteActor7: String? = "Sandra Oh"
+
+    val lengthOfName2 = favoriteActor7?.length ?: 0
+
+    println("The number of characters in your favorite actor's name is $lengthOfName2.")
 }
