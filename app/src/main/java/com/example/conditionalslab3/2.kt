@@ -41,4 +41,14 @@ fun main(){
         is Int -> println("h is an integer number, but not between 1 and 10.")
         else -> println("h isn't an integer number.")
     }
+
+
+    val trafficLightColor2 = "Amber"
+
+    when (trafficLightColor2) {
+        "Red" -> println("Stop")
+        "Yellow", "Amber" -> println("Slow")
+        "Green" -> println("Go")
+        else -> println("Invalid traffic-light color")
+    }
 }
