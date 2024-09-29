@@ -7,4 +7,20 @@ fun main(){
         "Green" -> println("Go")
         else -> println("Invalid traffic-light color")
     }
+
+    val x = 3
+
+    when (x) {
+        2 -> println("x is a prime number between 1 and 10.")
+        3 -> println("x is a prime number between 1 and 10.")
+        5 -> println("x is a prime number between 1 and 10.")
+        7 -> println("x is a prime number between 1 and 10.")
+    }
+
+    val y = 3
+
+    when (y) {
+        2, 3, 5, 7 -> println("x is a prime number between 1 and 10.")
+        else -> println("x isn't a prime number between 1 and 10.")
+    }
 }
