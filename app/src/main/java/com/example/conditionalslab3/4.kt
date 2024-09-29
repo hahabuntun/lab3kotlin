@@ -6,4 +6,9 @@ fun main() {
     favoriteActor2 = null
     println(favoriteActor2)
 
+    var number: Int? = 10
+    println(number)
+
+    number = null
+    println(number)
 }
