@@ -17,4 +17,12 @@ fun main() {
 
     var favoriteActor4: String? = "Sandra Oh"
     println(favoriteActor4!!.length)
+
+    var favoriteActor5: String? = "Sandra Oh"
+
+    if (favoriteActor5 != null) {
+        println("The number of characters in your favorite actor's name is ${favoriteActor5.length}.")
+    } else {
+        println("You didn't input a name.")
+    }
 }
