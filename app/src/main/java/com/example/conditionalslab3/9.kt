@@ -138,3 +138,11 @@ class SmartHome3(
         turnOffLight()
     }
 }
+
+fun main() {
+    var smartDevice: SmartDevice5 = SmartTvDevice3("Android TV", "Entertainment")
+    smartDevice.turnOn()
+
+    smartDevice = SmartLightDevice3("Google Light", "Utility")
+    smartDevice.turnOn()
+}
