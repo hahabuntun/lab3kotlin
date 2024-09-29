@@ -16,12 +16,12 @@ fun main() {
 
 
 
-    val treatFunction = trickOrTreat(false, {
+    val treatFunction = trickOrTreat(false) {
         "$it quarters"
-    })
-    val trickFunction = trickOrTreat(true, {
+    }
+    val trickFunction = trickOrTreat(true) {
       "Have a cupcake!"
-    })
+    }
     val example = trickOrTreat(true, null)
     treatFunction()
     trickFunction()
