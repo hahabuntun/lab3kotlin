@@ -1,0 +1,7 @@
+class SmartDevice {
+
+}
+
+fun main() {
+
+}
